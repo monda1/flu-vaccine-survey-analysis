@@ -11,8 +11,9 @@ library(embed)
 library(knitr)
 library(kableExtra)
 
-training_set_features <- read_csv("data/raw/training_set_features.csv")
-training_set_labels   <- read_csv("data/raw/training_set_labels.csv")
+training_set_features <- read_csv("data/raw/caracteristicas_datos_entrenamiento.csv")
+training_set_labels   <- read_csv("data/raw/etiquetas_datos_entrenamiento.csv")
+test <- read_csv("data/raw/test.csv")
 
 # Unión
 datos <- training_set_features |>
